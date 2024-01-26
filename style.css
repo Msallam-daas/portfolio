@@ -1,0 +1,123 @@
+/*-- GENRAL --*/
+:root {
+  --Brown: #D1884F;
+  --blueFirst: #008AAA;
+  --blueSecond: #3BBADB;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+body {
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
+/*-- GENRAL --*/
+
+/* --Navbar section-- */
+header {
+  margin-right: 8rem;
+}
+header .nav-links a {
+  color: #000000;
+  text-decoration: none;
+  padding: -2em 0.9em;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+  color: var(--Brown);
+}
+.nav-links .active {
+  color: var(--Brown);
+}
+/* --Navbar section-- */
+
+ /*--Main Section--*/
+main .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 4rem;
+}
+main .main-content {
+  text-align: left;
+  padding: 50px 20px;
+}
+main .main-content .main-desc {
+  width: 60%;
+  line-height: 1.3em;
+}
+main .main-content .title {
+  color: var(--blueFirst);
+  text-align: left;
+  font-size: 45px;
+  font-weight: bolder;
+}
+main .main-content .title .high-light {
+  color: var(--Brown);
+  font-size: 45px;
+  font-weight: bolder;
+}
+main .main-content .title-small {
+  color: var(--blueSecond);
+  text-align: left;
+  font-weight: bold;
+}
+main .main-content .main-desc .see-more {
+  color: var(--blueFirst);
+}
+main .main-image img {
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  border-bottom-left-radius: 79%;
+  margin-top: 2rem;
+  filter: drop-shadow(-14px 2px 0px #3BBADB);
+}
+.btn {
+  padding: 10px 20px;
+  background-color: var(--blueFirst);
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 20px;
+}
+.outline {
+  background-color: transparent;
+  border: 2px solid var(--blueFirst);
+  color: var(--blueFirst);
+}
+ /*--Main Section--*/
+
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-top: 10%;
+  }
+
+  main {
+    min-height: 50vh;
+  }
+
+  main .row {
+    grid-template-columns: 1fr;
+  }
+
+  .column1 {
+    display: none;
+  }
+
+  .body-main {
+    text-align: center;
+  }
+
+  main .body-main main-desc {
+    margin: auto;
+  }
+ 
+}
